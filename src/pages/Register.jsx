@@ -1,6 +1,7 @@
 import './style.css'
 import user from '../assets/user (1).svg'
 import lock from '../assets/lock.svg'
+import { NavLink } from 'react-router-dom'
 
 function Register() {
   return (
@@ -10,28 +11,28 @@ function Register() {
                 <h3>Please enter your Name, Login and your Password</h3>
                 <form>
                     <div className="inp-icon">
+                        <img src={user} alt="" />
                         <input type="text" placeholder='Username'/>
-                        <img src={user} alt="" />
                     </div>
 
                     <div className="inp-icon">
+                        <img src={user} alt="" />
                         <input type="email" placeholder='Email'/>
-                        <img src={user} alt="" />
                     </div>
 
                     <div className="inp-icon">
+                        <img src={lock} alt="" />
                         <input type="password" placeholder='Password'/>
-                        <img src={lock} alt="" />
                     </div>
 
                     <div className="inp-icon">
-                        <input type="password" placeholder='Re-enter password'/>
                         <img src={lock} alt="" />
+                        <input type="password" placeholder='Re-enter password'/>
                     </div>
                 </form>
                 <p>Forgot password?</p>
                 <button className="btn">Register</button>
-                <h5>Already have an Account <a href="/src/pages/Login.jsx">Login!</a></h5>
+                <h5>Already have an Account <NavLink to="/login"><a>Login!</a></NavLink></h5>
         </div>
     </>
   )

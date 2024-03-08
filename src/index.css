@@ -7,4 +7,8 @@
 
 body{
   background-color: #1F41A9;
+  background-image: url(./assets/BG.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
